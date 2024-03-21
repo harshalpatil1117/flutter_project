@@ -1,0 +1,226 @@
+# Created with package:mono_repo v6.4.3
+name: Dart CI
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+defaults:
+  run:
+    shell: bash
+env:
+  PUB_ENVIRONMENT: bot.github
+permissions: read-all
+
+jobs:
+  job_001:
+    name: "analyze_and_format; PKG: authorization_api; `dart format --output=none --set-exit-if-changed .`"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cache Pub hosted dependencies
+        uses: actions/cache@4723a57e26efda3a62cbde1812113b730952852d
+        with:
+          path: "~/.pub-cache/hosted"
+          key: "os:ubuntu-latest;pub-cache-hosted;sdk:stable;packages:authorization_api;commands:format"
+          restore-keys: |
+            os:ubuntu-latest;pub-cache-hosted;sdk:stable;packages:authorization_api
+            os:ubuntu-latest;pub-cache-hosted;sdk:stable
+            os:ubuntu-latest;pub-cache-hosted
+            os:ubuntu-latest
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@dbf1fa04f4d2e52c33185153d06cdb5443aa189d
+        with:
+          channel: stable
+      - id: checkout
+        name: Checkout repository
+        uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
+      - id: authorization_api_pub_upgrade
+        name: authorization_api; flutter pub upgrade
+        run: flutter pub upgrade
+        if: "always() && steps.checkout.conclusion == 'success'"
+        working-directory: authorization_api
+      - name: "authorization_api; dart format --output=none --set-exit-if-changed ."
+        run: "dart format --output=none --set-exit-if-changed ."
+        if: "always() && steps.authorization_api_pub_upgrade.conclusion == 'success'"
+        working-directory: authorization_api
+  job_002:
+    name: "analyze_and_format; PKG: common; `dart format --output=none --set-exit-if-changed .`"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cache Pub hosted dependencies
+        uses: actions/cache@4723a57e26efda3a62cbde1812113b730952852d
+        with:
+          path: "~/.pub-cache/hosted"
+          key: "os:ubuntu-latest;pub-cache-hosted;sdk:stable;packages:common;commands:format"
+          restore-keys: |
+            os:ubuntu-latest;pub-cache-hosted;sdk:stable;packages:common
+            os:ubuntu-latest;pub-cache-hosted;sdk:stable
+            os:ubuntu-latest;pub-cache-hosted
+            os:ubuntu-latest
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@dbf1fa04f4d2e52c33185153d06cdb5443aa189d
+        with:
+          channel: stable
+      - id: checkout
+        name: Checkout repository
+        uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
+      - id: common_pub_upgrade
+        name: common; flutter pub upgrade
+        run: flutter pub upgrade
+        if: "always() && steps.checkout.conclusion == 'success'"
+        working-directory: common
+      - name: "common; dart format --output=none --set-exit-if-changed ."
+        run: "dart format --output=none --set-exit-if-changed ."
+        if: "always() && steps.common_pub_upgrade.conclusion == 'success'"
+        working-directory: common
+  job_003:
+    name: "analyze_and_format; PKG: my_unbox_assets; `dart format --output=none --set-exit-if-changed .`"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cache Pub hosted dependencies
+        uses: actions/cache@4723a57e26efda3a62cbde1812113b730952852d
+        with:
+          path: "~/.pub-cache/hosted"
+          key: "os:ubuntu-latest;pub-cache-hosted;sdk:stable;packages:my_unbox_assets;commands:format"
+          restore-keys: |
+            os:ubuntu-latest;pub-cache-hosted;sdk:stable;packages:my_unbox_assets
+            os:ubuntu-latest;pub-cache-hosted;sdk:stable
+            os:ubuntu-latest;pub-cache-hosted
+            os:ubuntu-latest
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@dbf1fa04f4d2e52c33185153d06cdb5443aa189d
+        with:
+          channel: stable
+      - id: checkout
+        name: Checkout repository
+        uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
+      - id: my_unbox_assets_pub_upgrade
+        name: my_unbox_assets; flutter pub upgrade
+        run: flutter pub upgrade
+        if: "always() && steps.checkout.conclusion == 'success'"
+        working-directory: my_unbox_assets
+      - name: "my_unbox_assets; dart format --output=none --set-exit-if-changed ."
+        run: "dart format --output=none --set-exit-if-changed ."
+        if: "always() && steps.my_unbox_assets_pub_upgrade.conclusion == 'success'"
+        working-directory: my_unbox_assets
+  job_004:
+    name: "analyze_and_format; PKG: authorization_api; `flutter analyze --fatal-infos .`"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cache Pub hosted dependencies
+        uses: actions/cache@4723a57e26efda3a62cbde1812113b730952852d
+        with:
+          path: "~/.pub-cache/hosted"
+          key: "os:ubuntu-latest;pub-cache-hosted;sdk:stable;packages:authorization_api;commands:analyze"
+          restore-keys: |
+            os:ubuntu-latest;pub-cache-hosted;sdk:stable;packages:authorization_api
+            os:ubuntu-latest;pub-cache-hosted;sdk:stable
+            os:ubuntu-latest;pub-cache-hosted
+            os:ubuntu-latest
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@dbf1fa04f4d2e52c33185153d06cdb5443aa189d
+        with:
+          channel: stable
+      - id: checkout
+        name: Checkout repository
+        uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
+      - id: authorization_api_pub_upgrade
+        name: authorization_api; flutter pub upgrade
+        run: flutter pub upgrade
+        if: "always() && steps.checkout.conclusion == 'success'"
+        working-directory: authorization_api
+      - name: "authorization_api; flutter analyze --fatal-infos ."
+        run: flutter analyze --fatal-infos .
+        if: "always() && steps.authorization_api_pub_upgrade.conclusion == 'success'"
+        working-directory: authorization_api
+  job_005:
+    name: "analyze_and_format; PKG: common; `flutter analyze --fatal-infos .`"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cache Pub hosted dependencies
+        uses: actions/cache@4723a57e26efda3a62cbde1812113b730952852d
+        with:
+          path: "~/.pub-cache/hosted"
+          key: "os:ubuntu-latest;pub-cache-hosted;sdk:stable;packages:common;commands:analyze"
+          restore-keys: |
+            os:ubuntu-latest;pub-cache-hosted;sdk:stable;packages:common
+            os:ubuntu-latest;pub-cache-hosted;sdk:stable
+            os:ubuntu-latest;pub-cache-hosted
+            os:ubuntu-latest
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@dbf1fa04f4d2e52c33185153d06cdb5443aa189d
+        with:
+          channel: stable
+      - id: checkout
+        name: Checkout repository
+        uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
+      - id: common_pub_upgrade
+        name: common; flutter pub upgrade
+        run: flutter pub upgrade
+        if: "always() && steps.checkout.conclusion == 'success'"
+        working-directory: common
+      - name: "common; flutter analyze --fatal-infos ."
+        run: flutter analyze --fatal-infos .
+        if: "always() && steps.common_pub_upgrade.conclusion == 'success'"
+        working-directory: common
+  job_006:
+    name: "analyze_and_format; PKG: my_unbox_assets; `flutter analyze --fatal-infos .`"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cache Pub hosted dependencies
+        uses: actions/cache@4723a57e26efda3a62cbde1812113b730952852d
+        with:
+          path: "~/.pub-cache/hosted"
+          key: "os:ubuntu-latest;pub-cache-hosted;sdk:stable;packages:my_unbox_assets;commands:analyze"
+          restore-keys: |
+            os:ubuntu-latest;pub-cache-hosted;sdk:stable;packages:my_unbox_assets
+            os:ubuntu-latest;pub-cache-hosted;sdk:stable
+            os:ubuntu-latest;pub-cache-hosted
+            os:ubuntu-latest
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@dbf1fa04f4d2e52c33185153d06cdb5443aa189d
+        with:
+          channel: stable
+      - id: checkout
+        name: Checkout repository
+        uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
+      - id: my_unbox_assets_pub_upgrade
+        name: my_unbox_assets; flutter pub upgrade
+        run: flutter pub upgrade
+        if: "always() && steps.checkout.conclusion == 'success'"
+        working-directory: my_unbox_assets
+      - name: "my_unbox_assets; flutter analyze --fatal-infos ."
+        run: flutter analyze --fatal-infos .
+        if: "always() && steps.my_unbox_assets_pub_upgrade.conclusion == 'success'"
+        working-directory: my_unbox_assets
+  job_007:
+    name: "analyze_and_format; PKG: translations; `flutter analyze --fatal-infos .`"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cache Pub hosted dependencies
+        uses: actions/cache@4723a57e26efda3a62cbde1812113b730952852d
+        with:
+          path: "~/.pub-cache/hosted"
+          key: "os:ubuntu-latest;pub-cache-hosted;sdk:stable;packages:translations;commands:analyze"
+          restore-keys: |
+            os:ubuntu-latest;pub-cache-hosted;sdk:stable;packages:translations
+            os:ubuntu-latest;pub-cache-hosted;sdk:stable
+            os:ubuntu-latest;pub-cache-hosted
+            os:ubuntu-latest
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@dbf1fa04f4d2e52c33185153d06cdb5443aa189d
+        with:
+          channel: stable
+      - id: checkout
+        name: Checkout repository
+        uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
+      - id: translations_pub_upgrade
+        name: translations; flutter pub upgrade
+        run: flutter pub upgrade
+        if: "always() && steps.checkout.conclusion == 'success'"
+        working-directory: translations
+      - name: "translations; flutter analyze --fatal-infos ."
+        run: flutter analyze --fatal-infos .
+        if: "always() && steps.translations_pub_upgrade.conclusion == 'success'"
+        working-directory: translations

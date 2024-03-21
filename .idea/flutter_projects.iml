@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/calculator/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/calculator/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/calculator/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_project/ecommerce_apk/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_project/ecommerce_apk/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_project/ecommerce_apk/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_project/packages/common/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_project/packages/common/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_project/packages/common/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_project/packages/ecommerce_assets/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_project/packages/ecommerce_assets/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_project/packages/ecommerce_assets/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_project/packages/network/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_project/packages/network/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_project/packages/network/build" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_demo_project/firebase_demo_apk/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_demo_project/firebase_demo_apk/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_demo_project/firebase_demo_apk/build" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_demo_project/packages/common/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_demo_project/packages/common/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_demo_project/packages/common/build" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_demo_project/packages/firebaseDemo_assets/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_demo_project/packages/firebaseDemo_assets/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_demo_project/packages/firebaseDemo_assets/build" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_demo_project/packages/network/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_demo_project/packages/network/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_demo_project/packages/network/build" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_project/firebase_apk/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_project/firebase_apk/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_project/firebase_apk/build" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_project/packages/common/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_project/packages/common/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_project/packages/common/build" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_project/packages/firebaseBasic_assets/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_project/packages/firebaseBasic_assets/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_project/packages/firebaseBasic_assets/build" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_project/packages/network/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_project/packages/network/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/firebase_project/packages/network/build" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/Notes_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/Notes_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/Notes_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/Notes_app/packages/common/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/Notes_app/packages/common/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/Notes_app/packages/common/build" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/Notes_app/packages/enalytics_assets/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/Notes_app/packages/enalytics_assets/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/Notes_app/packages/enalytics_assets/build" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/Notes_app/packages/network/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/Notes_app/packages/network/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/Notes_app/packages/network/build" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/packages/common/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/packages/common/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/packages/common/build" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/packages/enalytics_assets/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/packages/enalytics_assets/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/packages/enalytics_assets/build" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/packages/network/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/packages/network/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/notes_project/packages/network/build" />
+      <excludeFolder url="file://$MODULE_DIR$/whatsapp_Clone/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/whatsapp_Clone/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/whatsapp_Clone/build" />
+      <excludeFolder url="file://$MODULE_DIR$/wicket_live_project/packages/common/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/wicket_live_project/packages/common/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/wicket_live_project/packages/common/build" />
+      <excludeFolder url="file://$MODULE_DIR$/wicket_live_project/packages/network/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/wicket_live_project/packages/network/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/wicket_live_project/packages/network/build" />
+      <excludeFolder url="file://$MODULE_DIR$/wicket_live_project/packages/wicket_live_assets/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/wicket_live_project/packages/wicket_live_assets/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/wicket_live_project/packages/wicket_live_assets/build" />
+      <excludeFolder url="file://$MODULE_DIR$/wicket_live_project/wicket_live_apk/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/wicket_live_project/wicket_live_apk/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/wicket_live_project/wicket_live_apk/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

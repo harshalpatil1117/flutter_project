@@ -1,0 +1,40 @@
+name: network
+description: Network call handle
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  dio: ^5.3.2
+  flutter_riverpod: ^2.1.1
+  freezed_annotation: ^2.2.0
+  equatable: ^2.0.5
+  json_annotation: ^4.7.0
+  shared_preferences: ^2.0.15
+  flutter_spinkit: ^5.2.0
+  firebase_apk:
+    path: ../../firebase_apk
+
+  cupertino_icons: ^1.0.2
+  fluttertoast: ^8.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.5.4
+  build_runner: ^2.4.6
+  freezed: ^2.2.1
+  flutter_gen_runner: ^5.1.0+1
+
+
+
+flutter:
+  uses-material-design: true
+

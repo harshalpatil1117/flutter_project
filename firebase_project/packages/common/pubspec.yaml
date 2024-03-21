@@ -1,0 +1,52 @@
+name: common
+description: Demo common widgets and utils
+version: 1.0.0
+publish_to: "none"
+
+environment:
+  sdk: ">=2.18.5 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebaseBasic_assets:
+    path: ../firebaseBasic_assets
+  dimensions_theme: ^0.0.2+1
+  flutter_screenutil: ^5.6.1
+  fluttertoast: ^8.2.2
+  intl: ^0.17.0
+  shared_preferences: ^2.0.15
+
+
+dev_dependencies:
+  flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Ubuntu
+      fonts:
+        - asset: lib/src/assets/fonts/Ubuntu-Bold.ttf
+          weight: 700
+        - asset: lib/src/assets/fonts/Ubuntu-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: lib/src/assets/fonts/Ubuntu-Italic.ttf
+          style: italic
+        - asset: lib/src/assets/fonts/Ubuntu-Light.ttf
+          weight: 300
+        - asset: lib/src/assets/fonts/Ubuntu-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: lib/src/assets/fonts/Ubuntu-Medium.ttf
+          weight: 500
+        - asset: lib/src/assets/fonts/Ubuntu-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: lib/src/assets/fonts/Ubuntu-Regular.ttf
+          weight: 400
+
+    - family: FutuBk
+      fonts:
+        - asset: lib/src/assets/fonts/FutuBk.ttf
+        - asset: lib/src/assets/fonts/FutuBkIt.ttf

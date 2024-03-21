@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/packages/ecommerce_assets/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ecommerce_assets/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ecommerce_assets/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_apk/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_apk/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce_apk/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/common/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/common/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/common/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/network/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/network/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/network/.pub" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
+  </component>
+</module>
